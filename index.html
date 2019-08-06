@@ -12,6 +12,7 @@
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="css/bootstrap.min.css">
 
+     <link rel="stylesheet" href="css/style.css" rel="preload" attribute="async">
      <!-- Google Fonts -->
      <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
@@ -29,12 +30,12 @@
 
      <!-- Simple line Icon 
      <link rel="stylesheet" href="css/simple-line-icons.css">
-     <!-- Themify Icon 
+      Themify Icon 
      <link rel="stylesheet" href="css/themify-icons.css"> 
-     <!-- Hover Effects 
+      Hover Effects 
      <link rel="stylesheet" href="css/set1.css"> -->
      <!-- Main CSS -->
-     <link rel="stylesheet" href="css/style.css">
+     
 </head>
 <body>
         <div class="container" id="home-page">
@@ -99,26 +100,30 @@
                                             <form class="form-wrap mt-4" action="results.html">
                                                 <div class="btn-group" role="group" aria-label="Basic example">
             
-                                                    <input type="text" placeholder="What are your looking for?" class="btn-group1">
+                                                    <input type="text" placeholder="What are your looking for?" class="btn-group1" autofocus required>
                                                     <input type="text" placeholder="Your location" class="btn-group2">
                                                     <button type="submit" class="btn-form"><i class="fas fa-search search-icon"></i>Search</button>
             
                                                 </div>
                                             </form>
-                                            <div class="slider-link">
-                                                <a class="suggestions" href="#">Browse Popular</a>
-                                            </div>
+                                       
                                         </div>
-                                    </div>
+                                    </div> <!-- row -->
+                                    
                                 </div>
                             </div>
                         </div> <!-- row -->
 
+                        <!-- <div class="row d-flex justify-content-center slider-link">
+                                <a class="suggestions" href="#">Browse Popular</a>
+                        </div> row -->
+
                         <div class="row d-flex justify-content-center" id="suggestion-box">
 
 
-                            <span id="suggestion-heading">Suggestions</span>
-                            <div class="col-sm-12">
+                            <p id="suggestion-heading">Suggestions</p>
+
+                            <div class="col-md-12 ">
                                 
                                 <div class="suggestion-items">
                                     <span>Burgers</span>

@@ -65,12 +65,12 @@
         
                     </div>
 
-                    <div class="container-fluid" styl="color:black" id="nav-dashboard">
+                    <!-- <div class="container-fluid bg-light shadow-sm" style="color:black" id="nav-dashboard"> -->
                             <div class="container">
-                                    <div class="nav-scroller shadow-sm navbar-fixed ">
+                                    <div class="nav-scroller shadow-sm navbar-fixed " id="nav-dashboard">
                                             <nav class="nav nav-underline">
                                               <a class="nav-link " href="index.html">Home</a>
-                                              <a class="nav-link" href="#">Login</a>
+                                              
                                               <a class="nav-link active" href="#">About</a>
                                               <a class="nav-link" href="#">
                                                 Contact
@@ -78,25 +78,21 @@
                                               </a>
                                               
                                               <a class="nav-link" href="#">Not a member? Sign up</a>
-                                              <div class="input-append inline-block">
-                                                    
-                                                    <input class="span2 input-small" id="appendedInputButton" type="text">
-                                                    <button class="btn" type="button">Go!</button>
-                                              </div>
+
+                                              <form class="form-inline my-2 my-lg-0 input-append">
+                                                <input class="form-control mr-sm-2 " type="text" placeholder="Search for food" aria-label="Search">
+                                                <input class="form-control mr-sm-2" type="text" placeholder="Location" aria-label="location">
+                                                <button class="btn btn-outline-dark btn-danger my-2 my-sm-0" type="submit">Search for food</button>
+                                              </form>
                                       
                                             </nav>
                                     </div> <!-- nav-scroller -->
-
-
-                            </div>
-                            
-
-
-                    </div> <!-- container-fluid -->
+                            </div> <!-- container -->                      
+                       <!-- </div> container-fluid -->
                 </div>
 
                 
-           </div>
+           </div> <!-- container-fluid -->
 
 
 			<!-- ================== TITLE ================================================================== -->
@@ -108,7 +104,7 @@
 
             <!-- ================== RESULTS ==================================================================  -->
             <div id="results" class="container ">
-            	<h4>Showing most popular</h4>
+            	<h4 id="result-title">Showing most popular</h4>
             	<h6>10 out of 395 results</h6>
             	<div class="row" id="primary">
     				
@@ -120,21 +116,21 @@
 
     							<div class="col-sm-5 image-block" >
     								<div class="thumbnail ">
-										<img src="images/double_double.png" alt="doubl double photo" class="img-rounded"> 
+										<img src="images/double_double.png" alt="double double photo" class="img-polariod"> 
     								</div> <!-- result image -->    								
     							</div> <!-- col-sm-4 -->
 								
     							<div class="col-sm-5" class="result-block">
 
 									<div class="result-details">
-										<strong class="d-block text-primary mb-2">1. Double-Double Cheese Burger </strong> 
+                                            <span class="food-item">  <strong class="d-block text-primary mb-2"> 1. Double-Double Cheese Burger  </strong> </span> 
                                      <lead><i class="fa fa-store"></i> In N Out </lead>
-                                     <p>Price: Cheap</p>
+                                     <p><lead>Price: Cheap</lead></p>
 		                                
 		                                
 										                                
-		                                <div class="result-likes ">
-                                                <p class="text-left inline">
+		                                <div class="result-likes">
+                                                <p class="text-left inline stars">
                                                         <span class="fa fa-star"></span>
                                                         <span class="fa fa-star"></span>
                                                         <span class="fa fa-star"></span>
@@ -142,16 +138,8 @@
                                                         <span class="fa fa-star-half-alt "></span>
                                                 </p>
                                     		<span class="likes" ><i class="fas fa-thumbs-up"></i> 867 Likes </span>
-                                    		<span class="likes" ></span><i class="fas fa-thumbs-down"></i> 248 Dislikes </span>
+                                    		<span class="down-likes" ><i class="fas fa-thumbs-down"></i> 248 Dislikes </span>
                                         </div> <!-- result-likes -->    
-
-                                        <!-- <div class="reviews">
-                                                <p class="text-right inline-block">
-                                                       <p class="text-right" ><span class="block">1024 reviews</span> <a href="#" class="stretched-link text-right">Read Reviews &raquo;</a></p> 
-                                                        
-                                                </p>
-                                                
-                                        </div> -->
                                     	 
 										
                         				
@@ -160,6 +148,7 @@
                                 </div> <!-- col-sm-7 -->
                                 <div class="col-sm-2">
                                         <p class="text-muted text-right"> 3.5 miles away <i class="fa fa-map-marker"></i></p>
+                                        
                                 </div>
                                 
                                 <!-- Test ================================================================ -->
@@ -174,7 +163,7 @@
     
                                     <div class="col-sm-5 image-block" >
                                         <div class="thumbnail ">
-                                            <img src="images/umami_burger.jpg" alt="umami burger photo" > 
+                                            <img src="images/umami_burger.jpg" alt="umami burger photo" class="img-polariod > 
                                         </div> <!-- result image -->    								
                                     </div> <!-- col-sm-4 -->
                                     
@@ -207,7 +196,7 @@
                                     </div> <!-- col-sm-5 result-block-->
 
                                     <div class="col-sm-2">
-                                            <p class="text-muted text-right"> 3.85 miles away <i class="fa fa-map-marker"></i></p>
+                                            <p class="text-muted text-right"> 4.85 miles away <i class="fa fa-map-marker"></i></p>
                                     </div> <!-- col-sm-2 -->
                                     
                                     <!-- Test ================================================================ -->
@@ -225,14 +214,14 @@
 	
 					 <aside class="col-sm-4">
                  
-                    <div class="widget shadow-sm">
+                  <!--  <div class="widget shadow-sm">
                         <form role="form" action="" class="search-form">
                             <label for="sidebar-search" class="sr-only">Search for food</label>
                             <input type="text" id="sidebar-search" placeholder="Search for food">
                             <button id="sidebar-button" class="btn btn-danger">Search</button>
                         
                         </form>
-                    </div> <!-- widget -->
+                    </div>  widget -->
 
                     <div class="widget">
                         <h5>Related Searches here</h5>

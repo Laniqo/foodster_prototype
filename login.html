@@ -7,35 +7,55 @@
     <meta name="author" content="Colorlib">
 
     <!-- Page Title -->
-    <title>Results</title>
-    
+    <title>Fewdster</title>
+
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="css/bootstrap.min.css">
 
+     <!-- Main CSS -->
+     <link rel="stylesheet" href="css/style.css" rel="preload" attribute="async">
      <!-- Google Fonts -->
      <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icon -->
+     <link href="css/all.min.css" rel="stylesheet">
+     <link href="css/fontawesome.min.css" rel="stylesheet">
+      <link href="css/brands.min.css" rel="stylesheet">
+       <link href="css/regular.min.css" rel="stylesheet">
+       <link href="fonts/font-awesome/webfonts/fa-regular-400.eot" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7d668b71bc.js"></script>
 
-     <!-- Simple line Icon -->
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+     <!-- Simple line Icon 
      <link rel="stylesheet" href="css/simple-line-icons.css">
-     <!-- Themify Icon -->
-     <link rel="stylesheet" href="css/themify-icons.css">
-     <!-- Hover Effects -->
-     <link rel="stylesheet" href="css/set1.css">
-     <!-- Main CSS -->
-     <link rel="stylesheet" href="css/style.css">
+      Themify Icon 
+     <link rel="stylesheet" href="css/themify-icons.css"> 
+      Hover Effects 
+     <link rel="stylesheet" href="css/set1.css"> -->
+    
+
+     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/floating-labels/">
+     
 </head>
 <body>
-        <div class="container">
-            <div class="nav-menu">
+        <div class="container" id="home-page">
+            <div class="nav-menu navbar-color">
                     <div class="bg transition">
-                        <div class="container-fluid cotnainer fixed">
-                            <div class="row">
+                        <div class="container-fluid fixed">
+                            <div class="row ">
                                 <div class="col-md-12">
-                                    <nav class="navbar navbar-inverse navbar-expand-lg navbar-dark ">
+                                    <nav class="navbar navbar-inverse navbar-expand-lg navbar-color">
                                         
-                                        <a href="#" class="btn btn-outline-light top-btn logo"><span class="ti-plus"></span> Add New Food </a></li>
+                                        <a href="#" class="btn btn-outline-light top-btn logo"><i class="fas fa-plus"></i> Add New Listing </a></li>
                                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                                         <span class="icon-menu"></span>
                                           </button>
@@ -49,7 +69,7 @@
                                                 <li class="nav-item active">
             
                                                     <!--<a class="nav-link" href="#">Log In</a> -->
-                                                    <a href="login.html"  class="btn btn-outline-light top-btn logo"> Log in</a></li>
+                                                   f
                                                 </li>
                                                 <li class="nav-item">
                                                     <a href="#" class="btn btn-outline-light top-btn logo"> Sign Up</a></li>
@@ -66,8 +86,37 @@
 
             </div>
 
-          
-        
-    
+
+      
+
+            <div class="container">
+                    <form class="form-signin" action="index.html">
+                            <div class="text-center mb-4 justify-content-center">
+                              
+                              <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+                              
+                            </div>
+                          
+                            <div class="form-label-group">
+                              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" autofocus>
+                              <label for="inputEmail">Email address</label>
+                            </div>
+                          
+                            <div class="form-label-group">
+                              <input type="password" id="inputPassword" class="form-control" placeholder="Password" >
+                              <label for="inputPassword">Password</label>
+                            </div>
+                          
+                            <div class="checkbox mb-3">
+                              <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                              </label>
+                            </div>
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+         
+                          </form>
+
+            </div>
+            
 </body>
 </html>

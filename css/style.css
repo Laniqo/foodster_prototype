@@ -14,6 +14,16 @@ html{
 
 
 
+  body {
+    display: -ms-flexbox;
+    height: 100%;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+  }
+
 body, h1, h2{
   font-family: 'Darker Grotesque', Helvetica, sans-serif !important;
   margin-top: 60px; }
@@ -82,7 +92,7 @@ p {
    ============================================================== */
 
 .container-fluid{
-  padding: 0;
+  padding: 0px;
 }
 
 nav.navbar-color{
@@ -108,7 +118,9 @@ nav.navbar-color{
 .brand {
   font-family: 'Yeseva One', cursive;
   color:#f36700;
-  font-size: 80px }
+  text-align: center;
+  font-size: 7vw;
+   }
 
 .navbar-light .navbar-brand {
   color: black; }
@@ -230,9 +242,15 @@ nav.navbar-color{
   text-align: center;
   margin-top: -200px; }
 
+  .slider-content_wrap{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
 .slider-content_wrap h5 {
   color: #909090;   /*gray color */
-  font-weight: 400;
+  font-size: 3vw;
   margin: 10px 0; }
 
 @media (max-width: 480px) {
@@ -240,7 +258,7 @@ nav.navbar-color{
     margin: 0 ; } }
 
 .btn-group {
-  width: 90%;
+  width: 100%;
   height: 50px;
    }
   @media (max-width: 576px) {
@@ -249,7 +267,7 @@ nav.navbar-color{
 
 .btn-group1 {
   padding: 24px;
-  width: 40%;
+  width: 42%;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border: none; }
@@ -263,7 +281,7 @@ nav.navbar-color{
 .btn-group2 {
   position: relative;
   padding: 24px;
-  width: 40%;
+  width: 43%;
   border-top: none;
   border-right: none;
   border-bottom: none;
@@ -278,8 +296,8 @@ nav.navbar-color{
 .btn-form {
   font-weight: 400;
   font-size: 18px;
-  padding: 10px;
-  width: 20%;
+  padding: 2px;
+  width: 15%;
   background: #f36700;
   /*background: #ff3a6d;*/
   color: #ffffff;
@@ -295,8 +313,12 @@ nav.navbar-color{
       border-radius: 3px; } }
 
 .search-icon {
-  font-size: 15px;
-  padding-right: 10px; }
+  width: 10%;
+  padding-right: 20px; }
+  @media (max-width: 576px) {
+    .search-icon {
+      width: 10%;
+      padding-right: 15px; } }
 
 .slider-link {
   color: #fff;
@@ -321,9 +343,9 @@ nav.navbar-color{
 #suggestion-heading{
   color: white;
   font-size: 24px;
-  padding: 0px;
-  border-bottom: 0x solid #ffffff;
-  position: block;
+  padding: 20px;
+  border-bottom: 1px solid #ffffff;
+  display: block;
 }
 
 .suggestions {
@@ -345,11 +367,13 @@ nav.navbar-color{
 
 .suggestion-items{
   display: inline-block;
-  height: 110px;
-  width: 110px;
+  max-height: 110px;
+  max-width: 110px;
+  width: 16%;
   resize: auto;
+  margin: 0 auto;
   border: 0x solid #ffffff;
-  margin: 5px;
+  margin: 3px;
   padding: 3px;
   text-align: center;
   vertical-align: middle;
@@ -364,7 +388,8 @@ nav.navbar-color{
 .suggestion-items span{
   display: table-cell;
   display: block;
-  color: #000000;
+  color: black;
+
   text-align: center;
   font-weight: 600px;
   font-size: 24px;
@@ -378,7 +403,11 @@ nav.navbar-color{
   border: 1.5px solid #f36700;
   background: #f36700;
   opacity: 0.75;
+}
+
+.suggestion-items span:hover{
   color: #ffff;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
@@ -391,6 +420,8 @@ nav.navbar-color{
    body#results-page{
     /*background-color: #f9fafb; */
     background-color: white;
+    padding-top: 60px;
+    border:none;
     
    }
 
@@ -398,6 +429,15 @@ nav.navbar-color{
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
    }
 
+  #nav-dashboard{
+    padding-top: 7px;
+    margin-bottom: 30px;
+    font-size: 1.3vmax;
+  }
+
+  #nav-dashboard button{
+
+  }
   #primary{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -421,7 +461,7 @@ nav.navbar-color{
   }
 
   .result-title h1, h4{
-    padding: 20px;
+    padding: 0px;
     color: black;
   }
 
@@ -501,6 +541,7 @@ div.result-image{
 
 
 .thumbnail{
+  height: 100%;
   position: relative;
   padding: 0px;
   margin: 0px;
@@ -508,9 +549,32 @@ div.result-image{
 }
 
 .thumbnail img{
-  height: 100%;
-  max-height: 225px;
+  max-height: 220px;
   width: 100%;
+  position: absolute;
+}
+
+.food-item{
+  font-size: 20px;
+}
+
+.result-likes{
+  height: 40%;
+  vertical-align: bottom;
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 0px;
+  margin-top: 30px;
+  border-inline: bottom;
+}
+
+.stars{
+  height: 15px;
+}
+
+.down-likes{
+  padding: 0px;
+  margin-left: 5px;
 }
 
 .widget{
@@ -539,8 +603,11 @@ button.btn.btn-danger{
   height: 35px;
   width: auto;
   background-color: #F36600;
-  position: absolute;
+  color: white;
   margin-left: 3px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .search-form ul{
@@ -548,3 +615,35 @@ button.btn.btn-danger{
 }
 
 
+
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
